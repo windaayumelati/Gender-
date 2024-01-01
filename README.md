@@ -814,6 +814,7 @@ ROC AUC (Receiver Operating Characteristic Area Under the Curve) adalah metrik y
 ROC AUC Score dihitung dari kurva ROC, yang mengukur performa model dalam membedakan antara kelas positif dan negatif.
  
 Rumusnya adalah:
+
 ![Alt text](image-55.png)
 
 Di sini, ROC curve adalah kurva yang menggambarkan hubungan antara True Positive Rate (TPR atau Recall) dan False Positive Rate (FPR). 
