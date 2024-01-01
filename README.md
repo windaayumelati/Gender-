@@ -779,7 +779,7 @@ Classification Report memberikan informasi evaluasi klasifikasi untuk setiap kel
 
 Classification Report menyajikan metrik-metrik seperti Presisi, Recall, dan F1 Score yang memberikan informasi tentang trade-off antara True Positive, False Positive, dan False Negative. Misalnya, Presisi memberikan informasi tentang seberapa akurat model dalam mengklasifikasikan positif, sedangkan Recall memberikan informasi tentang seberapa baik model dalam menangkap semua instance positif yang sebenarnya.
 
-**3. Cv scores**
+**3. Cross-validation (CV) Scores**
 Cross-validation (CV) scores adalah elemen penting dalam evaluasi model, membantu memastikan bahwa performa model dapat diukur dengan lebih reliabel. Proses ini melibatkan beberapa langkah:
 
 - **Pembagian Data:**
