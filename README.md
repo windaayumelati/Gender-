@@ -15,7 +15,7 @@ Bagian laporan ini mencakup:
 ### Problem Statements
 1. Bagaimana fitur-fitur karakteristik wajah, seperti panjang rambut, dimensi dahi, hidung, bibir, dan jarak antara hidung dan bibir, dapat memengaruhi tingkat akurasi dalam prediksi jenis kelamin?
 
-2. Bagaimana cara menbuat model prediksi gender yang mampu memberikan prediksi yang akurat dan dapat diandalkan?
+2. Bagaimana cara membuat model prediksi gender yang mampu memberikan prediksi yang akurat dan dapat diandalkan?
 
 
 ### Goals
@@ -661,7 +661,7 @@ print(y.shape)
 
 ![Alt text](image-35.png)
 
-## Modeling
+##Modeling
 Selanjutnya kita lanjut ke Modelling
 
 - Selanjutnya yaitu melakukan split data, yaitu memisahkan data training dan data testing dengan script seperti berikut:
@@ -779,8 +779,7 @@ Classification Report memberikan informasi evaluasi klasifikasi untuk setiap kel
 
 Classification Report menyajikan metrik-metrik seperti Presisi, Recall, dan F1 Score yang memberikan informasi tentang trade-off antara True Positive, False Positive, dan False Negative. Misalnya, Presisi memberikan informasi tentang seberapa akurat model dalam mengklasifikasikan positif, sedangkan Recall memberikan informasi tentang seberapa baik model dalam menangkap semua instance positif yang sebenarnya.
 
-**3. Cross-validation (CV) Scores**
-
+**3. Cv scores**
 Cross-validation (CV) scores adalah elemen penting dalam evaluasi model, membantu memastikan bahwa performa model dapat diukur dengan lebih reliabel. Proses ini melibatkan beberapa langkah:
 
 - **Pembagian Data:**
@@ -1130,13 +1129,24 @@ Dengan memanggil fungsi `knn_algorithm` dengan nilai k tertentu dan koordinat ti
 ## Simpan Model
 Langkah Terakhir yaitu kita Simpan Model jangan lupa untuk menyimpan model seperti berikut:
 
+
+- Simpan Model Pickle
 ```python
 import pickle
 
 filename = 'GenderPrediction.sav'
 pickle.dump(knn,open(filename,'wb'))
 ```
-
+- Simpan CSV
 ```python
 df.to_csv('GenderPrediction.csv',index=False)
 ```
+
+
+## Deployment
+
+gender-prediction.streamlit.app
+
+![Alt text](image-58.png)
+![Alt text](image-59.png)
+![Alt text](image-60.png)
